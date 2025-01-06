@@ -1,0 +1,225 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(132, 157, 62);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 100px;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    background-color: #000000;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+a[target]{
+    background-color: brown;
+    border: 5px solid brown;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 800px;
+    padding: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.textbox {
+    margin: 10px 0;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    background-color: #333;
+    color: #4CAF50;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-top: 50px; /* Jarak dari atas */
+    margin-bottom: 50px; /* Jarak dari bawah */
+    margin-left: 100px;
+}
+
+/* Form section */
+.form-section {
+    margin-bottom: 15px;
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-section input, .form-section select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-section input[type="number"], .form-section input[type="date"], .form-section input[type="email"], .form-section input[type="tel"] {
+    margin-top: 5px;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Container for the product table */
+.product-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    overflow-x: auto;
+}
+
+/* Table style */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Table header style */
+.product-table thead {
+    background-color: #333;
+    color: white;
+}
+
+.product-table th, .product-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.product-table td img {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Table row hover effect */
+.product-table tbody tr:hover {
+    background-color: #f59d0e;
+}
+
+/* Add spacing to the bottom of the table */
+.product-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Responsiveness */
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer{
+        position: fixed;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: right;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}

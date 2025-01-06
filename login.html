@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aplikasi Rental Mobil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Aplikasi Rental Mobil</h1><img src="logo.png" alt="Logo Aplikasi" class="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li><a href="daftar transaksi.html">Daftar Trsaksi</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="login.html" target="_blank">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-box">
+            <font size="24" color="white">Login Pengguna</font>
+            <form id="loginForm" onsubmit="return showAlert()">
+                <div class="textbox">
+                    <input type="text" placeholder="Username" name="username" id="username" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" id="password" required>
+                </div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Website ini dibuat oleh : Chandra Dianarto Putra.</p>
+    </footer>
+
+</body>
+</html>

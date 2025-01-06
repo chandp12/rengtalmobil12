@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Aplikasi Aplikasi Rental Mobil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Aplikasi Rental Mobil</h1><img src="logo.png" alt="Logo Aplikasi" class="logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li><a href="daftar transaksi.html">Daftar Trsaksi</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="login.html" target="_blank">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h2>Form Transaksi Rental Mobil</h2><br>
+        <form id="rentalForm" onsubmit="return validateForm()">
+            <div class="form-section">
+                <label for="customerName">Nama Pelanggan:</label>
+                <input type="text" id="customerName" name="customerName" placeholder="Masukkan Nama Pelanggan" required>
+            </div>
+            
+            <div class="form-section">
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Masukkan Nomor Telepon" required>
+            </div>
+            
+            <div class="form-section">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+            </div>
+
+            <div class="form-section">
+                <label for="carModel">Model Mobil:</label>
+                <select id="carModel" name="carModel" required>
+                    <option value="">Pilih Model Mobil</option>
+                    <option value="Toyota Avanza">Toyota Avanza</option>
+                    <option value="Honda Mobilio">Honda Mobilio</option>
+                    <option value="Suzuki Ertiga">Suzuki Ertiga</option>
+                    <option value="Mitsubishi Xpander">Mitsubishi Xpander</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <label for="rentalDuration">Durasi Sewa (Hari):</label>
+                <input type="number" id="rentalDuration" name="rentalDuration" min="1" placeholder="Masukkan Durasi Sewa" required>
+            </div>
+
+            <div class="form-section">
+                <label for="pickupDate">Tanggal Pengambilan:</label>
+                <input type="date" id="pickupDate" name="pickupDate" required>
+            </div>
+
+            <div class="form-section">
+                <label for="returnDate">Tanggal Pengembalian:</label>
+                <input type="date" id="returnDate" name="returnDate" required>
+            </div>
+
+            <div class="form-section">
+                <label for="totalCost">Biaya Total:</label>
+                <input type="text" id="totalCost" name="totalCost" readonly placeholder="Biaya Total" required>
+            </div>
+
+            <div class="form-section">
+                <button type="submit" class="submit-btn">Simpan Transaksi</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    </main>
+
+    <footer>
+        <p>Website ini dibuat oleh : Chandra Dianarto Putra.</p>
+    </footer>
+
+</body>
+</html>
